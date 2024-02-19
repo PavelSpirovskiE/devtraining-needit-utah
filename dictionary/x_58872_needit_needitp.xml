@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="e1b86f3f47840210a570fe02d16d436b" extends="task" label="NeedItP" max_length="40" name="x_58872_needit_needitp" type="collection">
+        <element attributes="target_field=percent_complete_target,target_threshold_colors=0:firebrick;33:gold;66:yellowgreen;90:darkgreen,target_field=target&#13;&#10;" label="%complete" max_length="15" name="complete" type="percent_complete"/>
+        <element label="Target" max_length="20" name="target" type="decimal"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
